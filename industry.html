@@ -5,28 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Economics Industry</title>
 
-  <!-- External shared stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ===== GLOBAL PAGE STYLES ===== */
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f3f6f2;
+      color:#1b2b22;
+      display:flex;
+      justify-content:center;
+      padding:28px 12px;
+    }
+
+    .page{
+      width:100%;
+      max-width:760px;
+      background:#ffffff;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      border-radius:4px;
+      overflow:hidden;
+    }
+
+    header{
+      background:#6AB369;
+      color:white;
+      padding:18px 22px;
+      text-align:center;
+    }
+
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:0.6px;
+      font-weight:700;
+    }
+
+    .navline{
+      margin-top:8px;
+      font-size:13px;
+      opacity:0.95;
+    }
+
+    .navline a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .navline a:hover{
+      text-decoration:underline;
+    }
+
+    main{
+      padding:28px 40px;
+      line-height:1.55;
+    }
+
+    h2{
+      margin:20px 0 10px;
+      font-size:17px;
+      color:#163621;
+      border-left:4px solid #6AB369;
+      padding-left:12px;
+      font-weight:700;
+    }
+
+    p{
+      margin:8px 0 12px;
+      color:#21392f;
+    }
+
+    .hero-img{
+      display:block;
+      margin:16px auto;
+      max-width:360px;
+      width:85%;
+      height:auto;
+      border-radius:2px;
+      box-shadow:0 6px 18px rgba(16,40,20,0.06);
+    }
+
+    .value-block{
+      margin-bottom:18px;
+    }
+
+    .value-meta{
+      font-style:italic;
+      color:#3b553f;
+    }
+
+    footer{
+      background:#19512a;
+      color:white;
+      padding:10px 16px;
+      text-align:center;
+      font-size:13px;
+    }
+
+    @media (max-width:520px){
+      main{ padding:20px; }
+      .hero-img{ max-width:280px; }
+      h1{ font-size:18px; }
+    }
+  </style>
 </head>
 <body>
   <div class="page">
 
-    <!-- HEADER -->
     <header>
       <h1>Economics Industry</h1>
-      <div class="navline">Values | Industry</div>
+      <div class="navline">
+        <a href="index.html">Values</a> | 
+        <a href="industry.html">Industry</a>
+      </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
-      <!-- Image related to economics -->
-      <img
-        src="economics.jpeg"
-        alt="Global economy and international trade illustration"
-        class="hero-img"
-      >
+      <img src="economics.jpeg" alt="Global economics illustration" class="hero-img">
 
-      <!-- INDUSTRY OVERVIEW -->
       <section class="value-block">
         <h2>Industry Overview</h2>
         <p><strong>Description:</strong> Economics is the study of how individuals, governments, and organizations allocate scarce resources and make decisions.</p>
@@ -35,8 +131,7 @@
         <p class="value-meta"><strong>Impact:</strong> Economic analysis influences laws, international relations, and the stability of global markets.</p>
       </section>
 
-      <!-- CAREER PATH -->
-      <section class="value-block">
+       <section class="value-block">
         <h2>Career: International Economics</h2>
         <p><strong>Role:</strong> International economists analyze global trade, exchange rates, and cross-border financial flows.</p>
         <p><strong>Responsibilities:</strong> This career involves research, economic modeling, policy evaluation, and advising governments or international organizations.</p>
@@ -44,7 +139,7 @@
         <p class="value-meta"><strong>Work Settings:</strong> Common employers include the IMF, World Bank, government agencies, and multinational firms.</p>
       </section>
 
-      <!-- ETHICAL ISSUE -->
+
       <section class="value-block">
         <h2>Ethical Issue in the Industry</h2>
         <p><strong>Issue:</strong> International economic policies may improve growth while harming vulnerable populations.</p>
@@ -53,7 +148,6 @@
         <p class="value-meta"><strong>Ethical Concern:</strong> Balancing economic efficiency with fairness and human impact.</p>
       </section>
 
-      <!-- PERSONAL VALUES -->
       <section class="value-block">
         <h2>My Personal Values</h2>
         <p><strong>Guiding Values:</strong> Fairness, transparency, and responsibility guide my ethical decision-making.</p>
@@ -62,8 +156,7 @@
         <p class="value-meta"><strong>Outcome:</strong> Ethical decision-making strengthens trust and long-term economic stability.</p>
       </section>
 
-      <!-- CYBERSECURITY ISSUES -->
-      <section class="value-block">
+       <section class="value-block">
         <h2>Cybersecurity Issues</h2>
         <p><strong>Data Sensitivity:</strong> Economists work with confidential financial and personal data.</p>
         <p><strong>Threats:</strong> Data breaches, manipulation of models, and unauthorized access are major risks.</p>
@@ -71,17 +164,15 @@
         <p class="value-meta"><strong>Risk Area:</strong> International data sharing increases exposure to cyber threats.</p>
       </section>
 
-      <!-- BEST PRACTICES -->
-      <section class="value-block">
+	<section class="value-block">
         <h2>Cybersecurity Best Practices</h2>
         <p><strong>Protection:</strong> Use encryption, secure networks, and multi-factor authentication.</p>
         <p><strong>Prevention:</strong> Limit data access and anonymize sensitive datasets.</p>
         <p><strong>Training:</strong> Regular cybersecurity awareness training helps prevent human error.</p>
         <p class="value-meta"><strong>Best Practice:</strong> Strong cybersecurity protects data integrity and public trust.</p>
-      </section>
+      </section>`	
     </main>
 
-    <!-- FOOTER -->
     <footer>
       Breanna Sherwood — Winter Session 2025/26
     </footer>
