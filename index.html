@@ -5,69 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Personal Values</title>
 
-  <!-- External shared stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ===== GLOBAL PAGE STYLES ===== */
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:#f3f6f2;
+      color:#1b2b22;
+      display:flex;
+      justify-content:center;
+      padding:28px 12px;
+    }
+
+    .page{
+      width:100%;
+      max-width:760px;
+      background:#ffffff;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      border-radius:4px;
+      overflow:hidden;
+    }
+
+    header{
+      background:#6AB369;
+      color:white;
+      padding:18px 22px;
+      text-align:center;
+    }
+
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:0.6px;
+      font-weight:700;
+    }
+
+    .navline{
+      margin-top:8px;
+      font-size:13px;
+      opacity:0.95;
+    }
+
+    .navline a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .navline a:hover{
+      text-decoration:underline;
+    }
+
+    main{
+      padding:28px 40px;
+      line-height:1.55;
+    }
+
+    h2{
+      margin:20px 0 10px;
+      font-size:17px;
+      color:#163621;
+      border-left:4px solid #6AB369;
+      padding-left:12px;
+      font-weight:700;
+    }
+
+    p{
+      margin:8px 0 12px;
+      color:#21392f;
+    }
+
+    .hero-img{
+      display:block;
+      margin:16px auto;
+      max-width:360px;
+      width:85%;
+      height:auto;
+      border-radius:2px;
+      box-shadow:0 6px 18px rgba(16,40,20,0.06);
+    }
+
+    .value-block{
+      margin-bottom:18px;
+    }
+
+    .value-meta{
+      font-style:italic;
+      color:#3b553f;
+    }
+
+    footer{
+      background:#19512a;
+      color:white;
+      padding:10px 16px;
+      text-align:center;
+      font-size:13px;
+    }
+
+    @media (max-width:520px){
+      main{ padding:20px; }
+      .hero-img{ max-width:280px; }
+      h1{ font-size:18px; }
+    }
+  </style>
 </head>
 <body>
   <div class="page">
 
-    <!-- HEADER -->
     <header>
       <h1>My Core Values</h1>
       <div class="navline">
-  <a href="values.html">Values</a> | 
-  <a href="industry.html">Industry</a>
-</div>
-
+        <a href="index.html">Values</a> | 
+        <a href="industry.html">Industry</a>
+      </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
-      <!-- Image related to personal values -->
-      <img
-        src="idkyet.webp"
-        alt="Word cloud illustrating personal values"
-        class="hero-img"
-      >
+      <img src="idkyet.webp" alt="Personal values word cloud" class="hero-img">
 
-      <!-- VALUE 1 -->
       <section class="value-block">
         <h2>Loyalty</h2>
-	<p><strong>Description:</strong> Loyalty means standing by the people and principles that matter to me, even when it is difficult or inconvenient.</p>
-        <p><strong>Where it derives from:</strong> Loyalty for me is derived from knowing that someone has your back even when it is hard.</p>
-        <p><strong>Why it is important:</strong> Loyalty is important because it builds trust and strengthens long-term relationships with others.</p>
-        <p class="value-meta"><strong>Ramifications:</strong> Without loyalty, trust is broken and relationships weaken over time. People may become hesitant to rely on someone who does not remain consistent or dependable.</p>
+        <p><strong>Description:</strong> Loyalty means standing by the people and principles that matter to me.</p>
+        <p class="value-meta"><strong>Ramifications:</strong> Without loyalty, trust and relationships weaken.</p>
       </section>
 
-      <!-- VALUE 2 -->
       <section class="value-block">
         <h2>Respect</h2>
-	<p><strong>Description:</strong> Respect is treating others with dignity, fairness, and consideration regardless of differences or disagreements.</p>
-        <p><strong>Where it derives from:</strong> Respect for me, comes from identifying someones qualities and treating them fairly no matter what.</p>
-        <p><strong>Why it is important:</strong> Respect is important because it creates positive interactions and allows people to work together effectively.</p>
-        <p class="value-meta"><strong>Ramifications:</strong> Failing to show respect often leads to conflict and damaged relationships. A lack of respect can create negative environments and make collaboration difficult.</p>
+        <p><strong>Description:</strong> Respect is treating others with dignity and fairness.</p>
+        <p class="value-meta"><strong>Ramifications:</strong> A lack of respect leads to conflict and division.</p>
       </section>
 
-      <!-- VALUE 3 -->
       <section class="value-block">
         <h2>Kindness</h2>
-	<p><strong>Description:</strong> Kindness is showing compassion, understanding, and generosity toward others in everyday actions.</p>
-        <p><strong>Where it derives from:</strong> Most times a lot of misunderstandings can occur and can be avoided with just a little kindness.</p>
-        <p><strong>Why it is important:</strong> Kindness is important because it fosters empathy and helps create supportive and welcoming environments.</p>
-        <p class="value-meta"><strong>Ramifications:</strong> Without kindness, interactions can become cold or hostile, pushing people away. This can harm relationships and create unnecessary tension in both personal and professional settings.</p>
+        <p><strong>Description:</strong> Kindness is showing compassion in everyday interactions.</p>
+        <p class="value-meta"><strong>Ramifications:</strong> Without kindness, environments become hostile.</p>
       </section>
 
-      <!-- VALUE 4 -->
       <section class="value-block">
         <h2>Courage</h2>
-	<p><strong>Description:</strong> Courage is the ability to stand up for what is right and take action even in the face of fear or uncertainty.</p>
-        <p><strong>Where it derives from:</strong> This is one of my personal values because I had to be courageous when attending new schools and meeting new people.</p>
-        <p><strong>Why it is important:</strong> Courage is important because it allows individuals to stand up for their beliefs and take meaningful action despite challenges.</p>
-        <p class="value-meta"><strong>Ramifications:</strong> A lack of courage can result in missed opportunities and regret. It may also allow harmful situations to continue because difficult decisions were avoided.</p>
+        <p><strong>Description:</strong> Courage is standing up for what is right despite fear.</p>
+        <p class="value-meta"><strong>Ramifications:</strong> A lack of courage can lead to regret and inaction.</p>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
       Breanna Sherwood — Winter Session 2025/26
     </footer>
+
+  </div>
+</body>
+</html>
